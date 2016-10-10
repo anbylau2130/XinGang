@@ -1,0 +1,323 @@
+﻿@{
+    ViewBag.Title = "菜单管理";
+}
+
+@section Head
+{
+           
+    <script type="text/javascript">
+        var data = [["公司简介", "CompanyProfiled"], ["经营范围", "BusinessScope"], ["招聘信息", "Offers"], ["合作企业", "Cooperative"], ["荣誉资质", "Honours"],["关于我们","AboutUs"]];
+        function Update(data) {
+            
+            var formpanel = new Ext.form.FormPanel({
+                baseCls: 'x-plain',
+                autoHeight: true,
+                autoWidth: true,
+                layout: 'form',
+                defaultType: 'textfield',
+                items: [
+                    {
+                        xtype: 'combo',
+                        readOnly: false,
+                        fieldLabel: '菜单类型',
+                        forceSelection: true,
+                        valueField: 'value',
+                        displayField: 'text',
+                        labelWidth: 50,
+                        mode: 'local',
+                        listWidth: 200,
+                        store: new Ext.data.SimpleStore({
+                            fields: ['text', 'value'],
+                            data: data
+                        }),
+                        id: 'Type',
+                    },
+                    {
+                        xtype: 'textfield',
+                        readOnly: false,
+                        fieldLabel: '显示名称',
+                        id: 'Text',
+                        labelWidth: 50,
+                    },
+                    {
+                        xtype: 'textfield',
+                        readOnly: false,
+                        fieldLabel: 'URL连接',
+                        id: 'URL',
+                        labelWidth: 50,
+                    },
+                    {
+                        xtype: 'textfield',
+                        readOnly: false,
+                        fieldLabel: '菜单级别',
+                        id: 'MenuNo',
+                        labelWidth: 50,
+                    },
+                    {
+                        xtype: 'hidden',
+                        id: 'ID'
+                    }]
+            });
+            var updatewin = new Ext.Window({
+                modal: true,
+                title: '添加菜单',
+                closable: false,
+                width: 600,
+                height: 400,
+                maximized: false,
+                layout: 'form',
+                plain: true,
+                items: formpanel,
+                buttons: [{
+                    text: '保存',
+                    handler: function () {
+                        Ext.Ajax.request({
+                            waitMsg: '正在提交...',
+                            url: '@Url.Content("~/Menu/Update")',
+                                params: {
+                                    Type: Ext.getCmp("Type").getValue(),
+                                    Text: Ext.getDom("Text").value,
+                                    URL: Ext.getDom("URL").value,
+                                    MenuNo: Ext.getDom("MenuNo").value,
+                                    ID: Ext.getDom("ID").value
+                                },
+                                success: function (form, action) {
+                                    Ext.Msg.alert("网站信息：", '亲~,恭喜你，保存成功~');
+                                    store.load();
+                                },
+                                failure: function (form, action) {
+                                    Ext.Msg.alert('异常警告：', "亲~，不好意思，数据保存失败~");
+                                }
+                            });
+                        }
+                }, {
+                    text: '关闭',
+                    handler: function () {
+                        updatewin.close();
+                    }
+                }]
+            });
+            updatewin.show();
+            
+
+            Ext.getDom("ID").value = data.ID;
+
+            Ext.getCmp("Type").setValue(data.Type);
+
+            Ext.getDom("Text").value = data.Text;
+
+            Ext.getDom("URL").value = data.URL;
+
+            Ext.getDom("MenuNo").value = data.MenuNo;
+
+
+        }
+
+        function Add() {
+
+            var formpanel = new Ext.form.FormPanel({
+                baseCls: 'x-plain',
+                autoHeight: true,
+                autoWidth: true,
+                layout: 'form',
+                defaultType: 'textfield',
+                items: [
+                    {
+                        xtype: 'combo',
+                        readOnly: false,
+                        fieldLabel: '菜单类型',
+                        forceSelection: true,
+                        valueField: 'value',
+                        displayField: 'text',
+                        labelWidth: 50,
+                        mode: 'local',
+                        listWidth: 200,
+                        store: new Ext.data.SimpleStore({
+                            fields: ['text', 'value'],
+                            data: data
+                        }),
+                        id: 'Type',
+                    },
+                    {
+                        xtype: 'textfield',
+                        readOnly: false,
+                        fieldLabel: '显示名称',
+                        id: 'Text',
+                        labelWidth: 50,
+                    },
+                    {
+                        xtype: 'textfield',
+                        readOnly: false,
+                        fieldLabel: 'URL连接',
+                        id: 'URL',
+                        labelWidth: 50,
+                    },
+                    {
+                        xtype: 'textfield',
+                        readOnly: false,
+                        fieldLabel: '菜单级别',
+                        id: 'MenuNo',
+                        labelWidth: 50,
+                    },
+                    {
+                        xtype: 'hidden',
+                        id: 'ID'
+                    }]
+            });
+            var updatewin = new Ext.Window({
+                modal: true,
+                title: '添加菜单',
+                closable: false,
+                width: 600,
+                height: 400,
+                maximized: false,
+                layout: 'form',
+                plain: true,
+                items: formpanel,
+                buttons: [{
+                        text: '保存',
+                        handler: function() {
+                            Ext.Ajax.request({
+                                waitMsg: '正在提交...',
+                                url: '@Url.Content("~/Menu/Add")',
+                                params: {
+                                    Type: Ext.getCmp("Type").getValue(),
+                                    Text: Ext.getDom("Text").value,
+                                    URL: Ext.getDom("URL").value,
+                                    MenuNo: Ext.getDom("MenuNo").value,
+                                    ID: Ext.getDom("ID").value
+                                },
+                                success: function(form, action) {
+                                    Ext.Msg.alert("网站信息：", '亲~,恭喜你，保存成功~');
+                                    store.load();
+                                },
+                                failure: function(form, action) {
+                                    Ext.Msg.alert('异常警告：', "亲~，不好意思，数据保存失败~");
+                                }
+                            });
+                        }
+                    }, {
+                        text: '关闭',
+                        handler: function() {
+                            updatewin.close();
+                        }
+                    }]
+            });
+            updatewin.show();
+
+        }
+
+        function Delete(data) {
+
+            Ext.Ajax.request({
+                waitMsg: '正在提交...',
+                url: '@Url.Content("~/Menu/Delete")',
+                params: {
+                    Type: data.Type,
+                    Text: data.Text,
+                    URL: data.URL,
+                    MenuNo: data.MenuNo,
+                    ID: data.ID
+                },
+                success: function(form, action) {
+                    Ext.Msg.alert("网站信息：", '亲~,恭喜你，删除成功~');
+                    store.load();
+                },
+                failure: function(form, action) {
+                    Ext.Msg.alert('异常警告：', "亲~，不好意思，数据删除失败~");
+                }
+            });
+        }
+
+        var store = new Ext.data.Store({
+            proxy: new Ext.data.HttpProxy({
+                    url: "@Url.Content("~/Menu/List")",
+                }
+            ),
+            reader: new Ext.data.JsonReader({},
+                [
+                    { name: 'ID' },
+                    { name: 'Type' },
+                    { name: 'Text' },
+                    { name: 'URL' },
+                    { name: "MenuNo" }
+                ]
+            )
+        });
+
+        var grid = new Ext.grid.GridPanel({
+            width: 700,
+            height: 500,
+            title: '菜单列表',
+            store: store,
+            columnLines: true,
+            trackMouseOver: false,
+            disableSelection: true,
+            loadMask: true,
+            columns: [
+                { id: 'ID', header: "ID", dataIndex: 'ID', width: 10, sortable: true },
+                { header: "菜单类型", dataIndex: 'Type', width: 20, hidden: false, sortable: true },
+                { header: "菜单名称", dataIndex: 'Text', width: 20, hidden: false, sortable: true },
+                { header: "URL地址", dataIndex: 'URL', width: 20, align: 'right', sortable: true },
+                { header: "创建时间", dataIndex: 'MenuNo', width: 10, sortable: true },
+                {
+                    header: '操作',
+                    width: 20,
+                    dataIndex: 'ID',
+                    align: "center",
+                    renderer: function(data, cellmeta, record) {
+                        var returnStr = "<INPUT type='button' id='btnAdd' value='增加' onclick='Add()' />  <INPUT type='button' id='btnUpdate' value='修改' onclick='Update(" + Ext.encode(record.data) + ")' /> <INPUT type='button' value='删除' id='btnDelete' onclick='Delete(" + Ext.encode(record.data) + ")'/>";
+                        return returnStr;
+                    }
+                }
+            ],
+            viewConfig: {
+                loadMask: true,
+                forceFit: true
+            },
+            tbar: new Ext.Toolbar([{
+                text: '添加菜单',
+                icon: 'icons/add.gif',
+                handler: function() {
+                    Add();
+                }
+            }]),
+            bbar: new Ext.PagingToolbar({
+                pageSize: 50,
+                store: store,
+                displayInfo: true,
+                displayMsg: '当前{0}到{1}条,共{2}条',
+                emptyMsg: '没有符合条件的数据'
+            })
+        });
+
+        Ext.onReady(function() {
+
+            Ext.QuickTips.init();
+
+            var window = new Ext.Window({
+                title: '菜单管理',
+                closable: false,
+                width: 800,
+                height: 600,
+                minWidth: 600,
+                minHeight: 500,
+                maximized: true,
+                layout: 'fit',
+                plain: true,
+                bodyStyle: 'margin:2px;padding:5px;',
+                buttonAlign: 'center',
+                items: grid,
+            });
+
+
+            store.load();
+
+            window.show();
+
+        });
+
+    </script>
+}
+
+

@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "经营范围";
+    Layout = "~/Views/Home/_LayoutContent.cshtml";
+}
+@*@Html.Action("PartialMenu","Home",new
+                                           {
+                                               PageCode=ViewContext.RouteData.Values["action"],
+                                           })*@
+@Html.Action("PartialCharacter","Home",new
+                                           {
+                                               PageName=ViewContext.RouteData.Values["action"],
+                                               //PageName=Request["Action"],
+                                               PageTitle=ViewBag.Title,
+                                               id=Request["id"]
+                                           })

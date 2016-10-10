@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "招聘信息";
+    Layout = "~/Views/Home/_LayoutContent.cshtml";
+}
+
+@Html.Action("PartialMenu","Home",new
+                                           {
+                                               PageCode=ViewContext.RouteData.Values["action"],
+                                           })
+
+@Html.Action("PartialMenuList","Home",new
+                                           {
+                                               PageName=ViewContext.RouteData.Values["action"],
+                                           })
+

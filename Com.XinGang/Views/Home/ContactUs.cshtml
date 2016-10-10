@@ -1,0 +1,9 @@
+﻿@{
+    ViewBag.Title = "联系我们";
+    Layout = "~/Views/Home/_Layout.cshtml";
+}
+@Html.Action("PartialContent","Home",new
+                                           {
+                                               PageName=ViewContext.RouteData.Values["action"],
+                                               PageTitle=ViewBag.Title
+                                           })

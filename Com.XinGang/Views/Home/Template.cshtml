@@ -1,0 +1,9 @@
+﻿@model Com.XinGang.Model.Model.ContentType
+@{
+    Layout = "~/Views/Home/_LayoutContent.cshtml";
+}
+
+@Html.Action(Model.View,Model.Controller,new
+                                           {
+                                               id=Request["id"]
+                                           })

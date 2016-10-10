@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Com.XinGang.Model.Model.Menu >
+
+    
+  <!-- 网页标题(菜单) -->
+    <div id='pdv_16681' class='pdv_class'  title='栏目导航' style='width:200px;height:446px;top:15px;left:15px; z-index:4'>
+        <div id='spdv_16681' class='pdv_content' style='overflow:hidden;width:100%;height:100%'>
+            <div class="pdv_border" style="border:0px;height:100%;background:#ffffff url(@Url.Content("~/Resource/base/border/604/images/l.png")) repeat-y">
+                <div style="height:100%;background:url(@Url.Content("~/Resource/base/border/604/images/r.png")) right repeat-y">
+                    <div style="height:39px;background:url(@Url.Content("~/Resource/base/border/604/images/top.png")) 0px 0px no-repeat">
+                        <div style="float:left;font:14px/41px 'microsoft yahei','SimSun',Arial,Sans-Serif;padding-left:32px;color:#fff;">
+                            栏目导航
+                        </div>
+                        <div style="float:right;width:60px;height:39px;text-align:right;background:url(@Url.Content("~/Resource/base/border/604/images/top.png")) -840px 0px no-repeat">
+                            <a href="-1" style="display:none"><img src="../../base/border/604/images/more.png" style="border:0px;margin:18px 20px 0px 0px;" /></a>
+                        </div>
+                    </div>
+                    <div style="margin:0px 3px;padding:0px">
+
+                        <link href="@Url.Content("~/Resource/page/templates/css/pagetitlemenu_dolphin.css")" rel="stylesheet" type="text/css" />
+                        <div class="titlemenu_dolphin" >
+
+                            @foreach (var item in Model)
+                            {
+                                  <a href="../../page/html/company.php" target="_self" class="titlemenu_dolphin">@item.Text</a>
+                            }
+                          
+                            <a href="../../page/html/honor.php" target="_self" class="titlemenu_dolphin">公司荣誉</a>
+
+
+                            <a href="../../page/html/culture.php" target="_self" class="titlemenu_dolphin">公司文化</a>
+
+
+                            <a href="../../page/html/ethic.php" target="_self" class="titlemenu_dolphin">经营理念</a>
+
+
+                            <a href="../../page/html/sale.php" target="_self" class="titlemenu_dolphin">营销网络</a>
+ 
+                        </div>
+
+                    </div>
+                </div>
+            </div><div style="margin-top:-12px;height:12px;line-height:12px;background:url(@Url.Content("~/Resource/base/border/604/images/top.png")) 0px -218px no-repeat">&nbsp;</div>
+            <div style="float:right;margin-top:-12px;width:12px;height:12px;line-height:12px;background:url(@Url.Content("~/Resource/base/border/604/images/top.png")) -888px -218px no-repeat">&nbsp;</div>
+
+        </div>
+    </div>

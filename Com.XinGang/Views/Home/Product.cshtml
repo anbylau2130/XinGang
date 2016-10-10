@@ -1,0 +1,8 @@
+﻿@{
+    ViewBag.Title = "经营范围";
+    Layout = "~/Views/Home/_Layout.cshtml";
+}
+@Html.Action("PartialProductList","Home",new
+                                           {
+                                               id=Request["id"]
+                                           })

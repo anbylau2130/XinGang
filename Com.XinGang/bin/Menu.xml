@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menus>
+  <menu name="公司简介" order="1">
+    <item text="设置简介" order="1">
+      <url>~/HomeBehind/CompanyProfile</url>
+    </item>
+  </menu>
+
+  <menu name="相关信息" order="2">
+    <item text="信息管理" order="1">
+      <url>~/Message/MessageManager</url>
+    </item>
+   
+    <item text="内容菜单管理" order="3">
+      <url>~/MenuContent/MenuContentManager</url>
+    </item>
+   <item text="文章管理" order="3">
+      <url>~/Character/CharacterManager</url>
+    </item>
+    <item text="页面管理" order="3">
+      <url>~/Page/PageManager</url>
+    </item>
+    <item text="产品管理" order="3">
+      <url>~/Product/ProductManager</url>
+    </item>
+    <item text="内容类型管理" order="3">
+      <url>~/ContentType/ContentTypeManager</url>
+    </item>
+  </menu>
+  
+</menus>

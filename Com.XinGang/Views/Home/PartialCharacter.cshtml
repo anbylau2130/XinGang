@@ -1,0 +1,131 @@
+﻿
+@model IEnumerable<Com.XinGang.Model.Model.Character>
+
+<script type="text/javascript">
+
+    $(function () {
+        var characterid = '@ViewData["id"]';
+        
+        change(characterid, '');
+    });
+    
+    function change(id,title) {
+        var url1 = '@Url.Content("~/Home/GetCharacter")' + '?id=' + id;
+        $.ajax({
+            url: url1,
+            type: "POST",
+            dataType: "json",
+            success: function (data) {
+                console.log(data);
+                $("#newstitle").html(data.Title);
+                $("#newstime").html(data.CreateTime);
+                $("#con").html(Ext.util.Format.htmlDecode(data.Content));
+                var size = $("#newscontent").height() + 190;
+                $("#content").css("height", size);
+                $("#currentpath").html(title);
+            }
+        });
+    }
+</script>
+<div id='content' style='width:1002px;height:517px;background:url(@Url.Content("~/Resource/effect/source/bg/cbg.png")) repeat-y;margin:0px auto'>
+
+
+    <!-- 网页标题(菜单) -->
+
+    <div id='pdv_16700' class='pdv_class' title='栏目导航' style='width: 200px; height: 446px; top: 15px; left: 15px; z-index: 4'>
+        <div id='spdv_16700' class='pdv_content' style='overflow: hidden; width: 100%; height: 100%'>
+            <div class="pdv_border" style="border:0px;height:100%;background:#ffffff url(@Url.Content("~/Resource//base/border/604/images/l.png")) repeat-y">
+                <div style="height:100%;background:url(@Url.Content("~/Resource/base/border/604/images/r.png")) right repeat-y">
+                    <div style="height:39px;background:url(@Url.Content("~/Resource//base/border/604/images/top.png")) 0px 0px no-repeat">
+                        <div style="float: left; font: 14px/41px 'microsoft yahei','SimSun',Arial,Sans-Serif; padding-left: 32px; color: #fff;">
+                            栏目导航
+                        </div>
+                        <div style="float:right;width:60px;height:39px;text-align:right;background:url(@Url.Content("~/Resource/base/border/604/images/top.png")) -840px 0px no-repeat">
+                            <a href="-1" style="display: none">
+                                <img src="@Url.Content("~/Resource/base/border/604/images/more.png")" style="border:0px;margin:18px 20px 0px 0px;" /></a>
+                        </div>
+                    </div>
+                    <div style="margin: 0px 3px; padding: 0px">
+
+                        <link href="@Url.Content("~/Resource/page/templates/css/pagetitlemenu_dolphin.css")" rel="stylesheet" type="text/css" />
+                        <div class="titlemenu_dolphin">
+                            @foreach (var item in Model)
+                            {
+                                <a href="javascript:change(@item.ID,'@item.Title')" onclick="" target="_self" class="titlemenu_dolphin">@item.Title</a>
+                            }
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top:-12px;height:12px;line-height:12px;background:url(@Url.Content("~/Resource//base/border/604/images/top.png")) 0px -218px no-repeat">&nbsp;</div>
+            <div style="float:right;margin-top:-12px;width:12px;height:12px;line-height:12px;background:url(@Url.Content("~/Resource/base/border/604/images/top.png")) -888px -218px no-repeat">&nbsp;</div>
+
+        </div>
+    </div>
+
+    <!-- 当前位置提示条 -->
+
+    <div id='pdv_16702' class='pdv_class' title='' style='width: 750px; height: 39px; top: 18px; left: 230px; z-index: 5'>
+        <div id='spdv_16702' class='pdv_content' style='overflow: hidden; width: 100%; height: 100%'>
+            <div class="pdv_border" style="border:0px;background:url(@Url.Content("~/Resource/base/border/788/images/title.png")) 0 0 no-repeat;padding:0px;margin:0px;height:100%;">
+                <link href="@Url.Content("~/Resource/page/templates/css/nav.css")" rel="stylesheet" type="text/css" />
+                <div id="nav">
+                    您现在的位置：<a href="@Url.Content("~/Home/Index")">企业形象成品网站</a> &gt; <span> <a href="@Url.Content("~/Home/"+ ViewData["PageName"])">@ViewData["PageTitle"]</a></span>&gt;<span id="currentpath"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 文章正文 -->
+    <div id='pdv_16931' class='pdv_class' title='' style='width: 718px; height: auto !important; min-height: 299px; top: 94px; left: 247px; z-index: 5'>
+        <div id='spdv_16931' class='pdv_content' style='overflow: visible; width: 100%;'>
+            <div class="pdv_border" style="margin: 0; padding: 0; height: 100%; border: 0px  solid; background: ;">
+                <div style="height: 25px; margin: 1px; display: none; background: ;">
+                    <div style="float: left; margin-left: 6px; line-height: 25px; font-weight: bold; color: ">
+                    </div>
+                    <div style="float: right; margin-right: 10px; display: none">
+                        <a href="-1" style="line-height: 25px; color: ">更多</a>
+                    </div>
+                </div>
+                <div style="padding: 0px">
+
+                    <link href="@Url.Content("~/Resource/news/templates/css/newscontent.css")" rel="stylesheet" type="text/css" />
+                    <script type=text/javascript src="@Url.Content("~/Resource/news/js/newscontent.js")"></script>
+                    <div id="newscontent">
+                        <div id="newstitle" class="newstitle">
+                          
+                        </div>
+                        <div class="info">
+                            作者：管理员 &nbsp;&nbsp; 
+                            发布于：<span id="newstime">
+                              
+                            </span>&nbsp;&nbsp; 
+                            文字：【<a href="javascript:fontZoom(16)">大</a>】
+                                 【<a href="javascript:fontZoom(14)">中</a>】
+                                 【<a href="javascript:fontZoom(12)">小</a>】
+                        </div>
+                        <div id="memo" class="memo" style="display: block">
+                            <span style="color: #ff6600">摘要：</span>
+                            本公司参加第八十届广州商品交易会本公司参加第八十届广州商品交易会
+                        </div>
+                        <div id="con" class="con">
+                           
+                        </div>
+                        <div id="contentpages">
+                        </div>
+                        <div class="bzone">
+                            <div class="down" style="display: none">
+                                附件下载：<span id="downlink"></span> (已下载0次) <span id="downcentnotice"></span>
+                                <input type="hidden" id="downcent" value="">
+                            </div>
+                            <input type="hidden" id="newsid" value="381">
+                            <div class="tags" style="display: none">标签：</div>
+                            <div id="banzhu" class="banzhu"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,710 @@
+﻿@{
+    ViewBag.Title = "内容管理";
+}
+@section Head
+{
+    <script type="text/javascript">
+        var PageComboStore = new Ext.data.Store({
+            autoLoad: true,
+            proxy: new Ext.data.HttpProxy({
+                url: '@Url.Content("~/MenuContent/PageCombobox")'
+            }),
+            reader: new Ext.data.JsonReader({
+                fields: ['PageName', 'ID']
+            })
+        });
+        
+          var ContentTypeComboStore = new Ext.data.Store({
+            autoLoad: true,
+            proxy: new Ext.data.HttpProxy({
+                url: '@Url.Content("~/MenuContent/ContentTypeCombobox")'
+            }),
+            reader: new Ext.data.JsonReader({
+                fields: ['TypeName', 'ID']
+            })
+        });
+        
+
+        function UpdateMenu(data) {
+            var formpanel = new Ext.form.FormPanel({
+                baseCls: 'x-plain',
+                autoHeight: true,
+                autoWidth: true,
+                layout: 'form',
+                defaultType: 'textfield',
+                items: [
+                    {
+                        xtype: 'combo',
+                        readOnly: false,
+                        fieldLabel: '页面归属',
+                        forceSelection: true,
+                        editable: false,
+                        valueField: 'ID',
+                        displayField: 'PageName',
+                        labelWidth: 50,
+                        mode: "remote",
+                        triggerAction: 'all',
+                        //listWidth: 200,
+                        store: PageComboStore,
+                        id: 'PageID',
+                    }, {
+                        xtype: 'combo',
+                        readOnly: false,
+                        fieldLabel: '模板类型',
+                        forceSelection: true,
+                        editable: false,
+                        valueField: 'ID',
+                        displayField: 'TypeName',
+                        labelWidth: 50,
+                        mode: "remote",
+                        triggerAction: 'all',
+                        //listWidth: 200,
+                        store: ContentTypeComboStore,
+                        id: 'ContentTypeID',
+                    },
+                    {
+                        xtype: 'textfield',
+                        readOnly: false,
+                        fieldLabel: '显示名称',
+                        id: 'Text',
+                        labelWidth: 50,
+                    },
+                    {
+                        xtype: 'hidden',
+                        id: 'ID'
+                    }]
+            });
+            var updatewin = new Ext.Window({
+                modal: true,
+                title: '添加菜单',
+                closable: false,
+                width: 600,
+                height: 400,
+                maximized: false,
+                layout: 'form',
+                plain: true,
+                items: formpanel,
+                buttons: [{
+                    text: '保存',
+                    handler: function () {
+                        Ext.Ajax.request({
+                            waitMsg: '正在提交...',
+                            url: '@Url.Content("~/Menu/Update")',
+                            params: {
+                                PageID: Ext.getCmp("PageID").getValue(),
+                                ContentTypeID: Ext.getCmp("ContentTypeID").getValue(),
+                                Text: Ext.getDom("Text").value,
+                                ID: Ext.getDom("ID").value,
+                            },
+                            success: function (form, action) {
+                                Ext.Msg.alert("网站信息：", '亲~,恭喜你，保存成功~');
+                                tree.root.reload();
+                            },
+                            failure: function (form, action) {
+                                Ext.Msg.alert('异常警告：', "亲~，不好意思，数据保存失败~");
+                            }
+                        });
+                    }
+                }, {
+                    text: '关闭',
+                    handler: function () {
+                        updatewin.close();
+                    }
+                }]
+            });
+            updatewin.show();
+
+            Ext.getDom("ID").value = data.ID;
+
+            Ext.getDom("Text").value = data.Text;
+
+            Ext.getCmp("PageID").setValue(data.PageID);
+            
+            Ext.getCmp("ContentTypeID").setValue(data.ContentTypeID);
+
+
+        }
+
+        //增加菜单
+
+        function AddMenu() {
+
+            var formpanel = new Ext.form.FormPanel({
+                baseCls: 'x-plain',
+                autoHeight: true,
+                autoWidth: true,
+                layout: 'form',
+                defaultType: 'textfield',
+                items: [
+                    {
+                        xtype: 'combo',
+                        readOnly: false,
+                        fieldLabel: '页面归属',
+                        forceSelection: true,
+                        editable: false,
+                        valueField: 'ID',
+                        displayField: 'PageName',
+                        labelWidth: 50,
+                        mode: "remote",
+                        triggerAction: 'all',
+                        //listWidth: 200,
+                        store: PageComboStore,
+                        id: 'PageID',
+                    }, {
+                        xtype: 'combo',
+                        readOnly: false,
+                        fieldLabel: '模板类型',
+                        forceSelection: true,
+                        editable: false,
+                        valueField: 'ID',
+                        displayField: 'TypeName',
+                        labelWidth: 50,
+                        mode: "remote",
+                        triggerAction: 'all',
+                        //listWidth: 200,
+                        store: ContentTypeComboStore,
+                        id: 'ContentTypeID',
+                    },
+                    {
+                        xtype: 'textfield',
+                        readOnly: false,
+                        fieldLabel: '显示名称',
+                        id: 'Text',
+                        labelWidth: 50,
+                    },
+                    {
+                        xtype: 'hidden',
+                        id: 'ID'
+                    }]
+            });
+            var updatewin = new Ext.Window({
+                modal: true,
+                title: '添加菜单',
+                closable: false,
+                width: 600,
+                height: 400,
+                maximized: false,
+                layout: 'form',
+                plain: true,
+                items: formpanel,
+                buttons: [{
+                    text: '保存',
+                    handler: function () {
+                        Ext.Ajax.request({
+                            waitMsg: '正在提交...',
+                            url: '@Url.Content("~/Menu/Add")',
+                            params: {
+                                PageID: Ext.getCmp("PageID").getValue(),
+                                ContentTypeID: Ext.getCmp("ContentTypeID").getValue(),
+                                Text: Ext.getDom("Text").value,
+                                ID: Ext.getDom("ID").value,
+                            },
+                            success: function (form, action) {
+                                Ext.Msg.alert("网站信息：", '亲~,恭喜你，保存成功~');
+                                tree.root.reload();
+
+                            },
+                            failure: function (form, action) {
+                                Ext.Msg.alert('异常警告：', "亲~，不好意思，数据保存失败~");
+                            }
+                        });
+                    }
+                }, {
+                    text: '关闭',
+                    handler: function () {
+                        updatewin.close();
+                    }
+                }]
+            });
+            updatewin.show();
+
+        }
+
+        //删除菜单
+
+        function DeleteMenu(data) {
+
+            Ext.Ajax.request({
+                waitMsg: '正在提交...',
+                url: '@Url.Content("~/Menu/Delete")',
+                params: {
+                 
+                        PageID: data.PageID,
+                        Text: data.Text,
+                        ContentTypeID:data.ContentTypeID,
+                        ID: data.ID
+                    },
+                    success: function (form, action) {
+                        Ext.Msg.alert("网站信息：", '亲~,恭喜你，删除成功~');
+                        tree.root.reload();
+
+                    },
+                    failure: function (form, action) {
+                        Ext.Msg.alert('异常警告：', "亲~，不好意思，数据删除失败~");
+                    }
+                });
+            }
+
+            //更新内容
+
+            function UpdateContent(data) {
+                var formpanel = new Ext.form.FormPanel({
+                    baseCls: 'x-plain',
+                    autoHeight: true,
+                    autoWidth: true,
+                    layout: 'form',
+                    defaultType: 'textfield',
+                    items: [
+                        {
+                            xtype: 'textfield',
+                            readOnly: false,
+                            fieldLabel: '标题',
+                            id: 'Title',
+                            labelWidth: 50,
+                        },
+                        {
+                            id: 'CreateTime',
+                            readOnly: true,
+                            fieldLabel: '创建时间',
+                            labelWidth: 50,
+                        },
+                        {
+                            xtype: 'htmleditor',
+                            readOnly: false,
+                            fieldLabel: '文本内容',
+                            id: 'Text',
+                            labelWidth: 50,
+                        },
+                        {
+                            xtype: 'hidden',
+                            id: 'UpdateTime'
+                        },
+                        {
+                            xtype: 'hidden',
+                            id: 'ID'
+                        }]
+                });
+                var updatewin = new Ext.Window({
+                    modal: true,
+                    title: '添加菜单',
+                    closable: false,
+                    width: 600,
+                    height: 400,
+                    maximized: false,
+                    layout: 'form',
+                    plain: true,
+                    items: formpanel,
+                    buttons: [{
+                        text: '保存',
+                        handler: function () {
+                            if (tree.getSelectionModel().selNode) {
+                                if (tree.getSelectionModel().selNode.leaf == true) {
+                                    //var id = tree.getSelectionModel().selNode.id;
+                                    //var text = tree.getSelectionModel().selNode.text;
+                                    //var pnodeid = tree.getSelectionModel().selNode.parentNode.id;
+                                    //UpdateMenu({ 'ID': id, 'Text': text, 'PageID': pnodeid });
+                                    ////var pnodetext = tree.getSelectionModel().selNode.parentNode.text;
+                                    Ext.Ajax.request({
+                                        waitMsg: '正在提交...',
+                                        url: '@Url.Content("~/Content/Update")',
+                                        params: {
+                                            MenuID: tree.getSelectionModel().selNode.id,
+                                            ID: Ext.getDom("ID").value,
+                                            Title: Ext.getDom("Title").value,
+                                            Text: Ext.util.Format.htmlEncode(Ext.getCmp("Text").getValue()),
+                                            CreateTime: Ext.getDom("CreateTime").value,
+                                            UpdateTime: Ext.getDom("UpdateTime").value,
+                                        },
+                                        success: function (form, action) {
+                                            Ext.Msg.alert("网站信息：", '亲~,恭喜你，保存成功~');
+                                            store.load();
+                                        },
+                                        failure: function (form, action) {
+                                            Ext.Msg.alert('异常警告：', "亲~，不好意思，数据保存失败~");
+
+                                        }
+                                    });
+                                } else {
+                                    Ext.Msg.alert("警告", "操作有错误，请先选中“子节点”,然后进行操作~");
+                                }
+
+                            } else {
+                                Ext.Msg.alert("警告", "操作有错误，请先选中节点,然后进行操作~");
+                            }
+
+                        }
+                    }, {
+                        text: '关闭',
+                        handler: function () {
+                            updatewin.close();
+                        }
+                    }]
+                });
+                updatewin.show();
+
+                Ext.getDom("ID").value = data.ID;
+
+                Ext.getDom("Title").value = data.Title;
+
+                Ext.getCmp("Text").setValue(Ext.util.Format.htmlDecode(Ext.util.Format.htmlDecode(data.Text)));
+
+                Ext.getDom("CreateTime").value = data.CreateTime;
+
+                Ext.getDom("UpdateTime").value = data.UpdateTime;
+
+
+            }
+
+            //增加内容
+
+            function AddContent() {
+
+                var formpanel = new Ext.form.FormPanel({
+                    baseCls: 'x-plain',
+                    autoHeight: true,
+                    autoWidth: true,
+                    layout: 'form',
+                    defaultType: 'textfield',
+                    items: [
+                        {
+                            xtype: 'textfield',
+                            readOnly: false,
+                            fieldLabel: '标题',
+                            id: 'Title',
+                            labelWidth: 50,
+                        },
+                        {
+                            id: 'CreateTime',
+                            readOnly: true,
+                            fieldLabel: '创建时间',
+                            labelWidth: 50,
+                        },
+                        {
+                            xtype: 'htmleditor',
+                            readOnly: false,
+                            fieldLabel: '文本内容',
+                            id: 'Text',
+                            labelWidth: 50,
+                        },
+                        {
+                            xtype: 'hidden',
+                            id: 'UpdateTime'
+                        },
+                        {
+                            xtype: 'hidden',
+                            id: 'ID'
+                        }]
+                });
+                var updatewin = new Ext.Window({
+                    modal: true,
+                    title: '添加菜单',
+                    closable: false,
+                    width: 600,
+                    height: 400,
+                    maximized: false,
+                    layout: 'form',
+                    plain: true,
+                    items: formpanel,
+                    buttons: [{
+                        text: '保存',
+                        handler: function () {
+                            if (tree.getSelectionModel().selNode) {
+                                if (tree.getSelectionModel().selNode.leaf == true) {
+                                    //var id = tree.getSelectionModel().selNode.id;
+                                    //var text = tree.getSelectionModel().selNode.text;
+                                    //var pnodeid = tree.getSelectionModel().selNode.parentNode.id;
+                                    //UpdateMenu({ 'ID': id, 'Text': text, 'PageID': pnodeid });
+                                    ////var pnodetext = tree.getSelectionModel().selNode.parentNode.text;
+                                    Ext.Ajax.request({
+                                        waitMsg: '正在提交...',
+                                        url: '@Url.Content("~/Content/Add")',
+                                    params: {
+                                        ID: Ext.getDom("ID").value,
+                                        Title: Ext.getDom("Title").value,
+                                        Text: Ext.util.Format.htmlEncode(Ext.getCmp("Text").getValue()),
+                                        CreateTime: Ext.getDom("CreateTime").value,
+                                        UpdateTime: Ext.getDom("UpdateTime").value,
+                                        MenuID: tree.getSelectionModel().selNode.id
+                                    },
+                                    success: function (form, action) {
+                                        Ext.Msg.alert("网站信息：", '亲~,恭喜你，保存成功~');
+                                        store.load();
+                                    },
+                                    failure: function (form, action) {
+                                        Ext.Msg.alert('异常警告：', "亲~，不好意思，数据保存失败~");
+
+                                    }
+                                });
+                            } else {
+                                Ext.Msg.alert("警告", "操作有错误，请先选中“子节点”,然后进行操作~");
+                            }
+
+                        } else {
+                            Ext.Msg.alert("警告", "操作有错误，请先选中节点,然后进行操作~");
+                        }
+
+                    }
+                }, {
+                    text: '关闭',
+                    handler: function () {
+                        updatewin.close();
+                    }
+                }]
+            });
+            updatewin.show();
+
+        }
+
+        function DeleteContent(data) {
+            if (tree.getSelectionModel().selNode) {
+                if (tree.getSelectionModel().selNode.leaf == true) {
+                    Ext.Ajax.request({
+                        waitMsg: '正在提交...',
+                        url: '@Url.Content("~/Content/Delete")',
+                            params: {
+                                ID: data.ID,
+                                Title: data.Title,
+                                Text: data.Text,
+                                CreateTime: data.CreateTime,
+                                UpdateTime: data.UpdateTime
+                            },
+                            success: function (form, action) {
+                                Ext.Msg.alert("网站信息：", '亲~,恭喜你，删除成功~');
+                                store.load();
+                            },
+                            failure: function (form, action) {
+                                Ext.Msg.alert('异常警告：', "亲~，不好意思，数据删除失败~");
+                            }
+                        });
+                    } else {
+                        Ext.Msg.alert("警告", "操作有错误，请先选中“子节点”,然后进行操作~");
+                    }
+                } else {
+                    Ext.Msg.alert("警告", "操作有错误，请先选中节点,然后进行操作~");
+                }
+            }
+
+            var store = new Ext.data.Store({
+                proxy: new Ext.data.HttpProxy({
+                    url: "@Url.Content("~/Content/List")",
+                }
+            ),
+                reader: new Ext.data.JsonReader({},
+                    [
+                        { name: 'ID' },
+                        { name: 'Title' },
+                        { name: 'Text' },
+                        { name: 'CreateTime' },
+                        { name: "UpdateTime" }
+                    ]
+                )
+            });
+
+            var grid = new Ext.grid.GridPanel({
+                height: '100%',
+                width: '80%',
+                title: '菜单列表',
+                store: store,
+                columnLines: true,
+                trackMouseOver: false,
+                disableSelection: true,
+                loadMask: true,
+                columns: [
+                    { id: 'ID', header: "ID", dataIndex: 'ID', width: 10, sortable: true },
+                    { header: "标题", dataIndex: 'Title', width: 10, hidden: false, sortable: true },
+                    { header: "文本内容", dataIndex: 'Text', width: 10, hidden: false, sortable: true },
+                    { header: "创建时间", dataIndex: 'CreateTime', width: 10, align: 'right', sortable: true },
+                    { header: "更新时间", dataIndex: 'UpdateTime', width: 10, sortable: true },
+                    {
+                        header: '操作',
+                        width: 20,
+                        dataIndex: 'ID',
+                        align: "center",
+                        renderer: function (data, cellmeta, record) {
+                            record.data.Text = Ext.util.Format.htmlEncode(record.data.Text);
+                            var returnStr = "<INPUT type='button' id='btnAdd' value='增加' onclick='AddContent()' />  <INPUT type='button' id='btnUpdate' value='修改' onclick='UpdateContent(" + Ext.encode(record.data) + ")' /> <INPUT type='button' value='删除' id='btnDelete' onclick='DeleteContent(" + Ext.encode(record.data) + ")'/>";
+                            return returnStr;
+                        }
+                    }
+                ],
+                viewConfig: {
+                    loadMask: true,
+                    forceFit: true
+                },
+                tbar: new Ext.Toolbar([{
+                    text: '添加文章',
+                    icon: 'icons/add.gif',
+                    handler: function () {
+                        AddContent();
+                    }
+                }]),
+                bbar: new Ext.PagingToolbar({
+                    pageSize: 50,
+                    store: store,
+                    displayInfo: true,
+                    displayMsg: '当前{0}到{1}条,共{2}条',
+                    emptyMsg: '没有符合条件的数据'
+                })
+            });
+
+            var treeloader = new Ext.tree.TreeLoader({
+                url: '@Url.Content("~/MenuContent/TreeNodeJson")'
+        });
+
+        var tree = new Ext.tree.TreePanel({
+            fix: 1,
+            title: '菜单栏目',
+            height: '100%',
+            width: '20%',
+            useArrows: true,
+            autoScroll: true,
+            animate: true,
+            enableDD: true,
+            containerScroll: true,
+            rootVisible: false,
+            frame: true,
+            root: {
+                nodeType: 'async'
+            },
+
+            loader: treeloader,
+            // auto create TreeLoader
+            //dataUrl: '@Url.Content("~/MenuContent/TreeNodeJson")',
+
+            listeners: {
+                'checkchange': function (node, checked) {
+                    if (checked) {
+                        node.getUI().addClass('complete');
+                    } else {
+                        node.getUI().removeClass('complete');
+                    }
+                }
+            },
+
+            buttons: [
+                {
+                    text: '添加菜单',
+                    width: 30,
+                    handler: function () {
+                        AddMenu();
+                    }
+                }, {
+                    text: '修改菜单',
+                    width: 30,
+                    handler: function () {
+                        if (tree.getSelectionModel().selNode) {
+                            if (tree.getSelectionModel().selNode.leaf == true) {
+                                var id = tree.getSelectionModel().selNode.id;
+                                var text = tree.getSelectionModel().selNode.text;
+                                var pnodeid = tree.getSelectionModel().selNode.parentNode.id;
+                                UpdateMenu({ 'ID': id, 'Text': text, 'PageID': pnodeid });
+                                //var pnodetext = tree.getSelectionModel().selNode.parentNode.text;
+                            }
+                        } else {
+                            Ext.Msg.alert("警告", "操作有错误，请先选中节点,然后进行操作~");
+                        }
+                    }
+                }, {
+                    text: '删除菜单',
+                    width: 30,
+                    handler: function () {
+                        if (tree.getSelectionModel().selNode) {
+                            if (tree.getSelectionModel().selNode.leaf == true) {
+                                var id = tree.getSelectionModel().selNode.id;
+                                var text = tree.getSelectionModel().selNode.text;
+                                var pnodeid = tree.getSelectionModel().selNode.parentNode.id;
+                                //var pnodetext = tree.getSelectionModel().selNode.parentNode.text;
+                                DeleteMenu({ 'ID': id, 'Text': text, 'PageID': pnodeid });
+                            }
+                        } else {
+                            Ext.Msg.alert("警告", "操作有错误，请先选中节点,然后进行操作~");
+                        }
+                    }
+                }
+            ]
+        });
+
+                                                        @*        var tree = new Ext.tree.TreePanel({
+            fix: 1,
+            autoLoad :true,
+            title: '菜单栏目',
+            width: 250,
+            useArrows: true,
+            autoScroll: true,
+            animate: true,
+            enableDD: true,
+            containerScroll: true,
+            rootVisible: false,
+            frame: true,
+            root: {
+                nodeType: 'async'
+            },
+            //loader:treeloader,
+            // auto create TreeLoader
+            dataUrl:'@Url.Content("~/MenuContent/TreeNodeJson")',
+
+            listeners: {
+                'checkchange': function (node, checked) {
+                    if (checked) {
+                        node.getUI().addClass('complete');
+                    } else {
+                        node.getUI().removeClass('complete');
+                    }
+                }
+            },
+            buttons: [{
+                text: '添加菜单',
+                icon: "@Url.Content("~/Resource/Scripts/Ext/icons/fam/add.gif")",
+                handler: function () {
+                    AddMenu();
+                }
+            }, {
+                text: '修改菜单',
+                icon: 'icons/add.gif',
+                handler: function () {
+                    AddMenu();
+                }
+            }, {
+                text: '删除菜单',
+                icon: 'icons/add.gif',
+                handler: function () {
+                    AddMenu();
+                }
+            }]
+        });*@
+
+        tree.getRootNode().expand(true);
+        tree.on('click', function (node, e) {
+            node.ui.addClass("x-tab-panel-body");
+        });
+
+        Ext.onReady(function () {
+
+            Ext.QuickTips.init();
+
+            var window = new Ext.Window({
+                title: '菜单内容管理',
+                closable: false,
+                width: "100%",
+                height: "100%",
+                maximized: true,
+                layout: 'hbox',
+                layoutConfig: {
+                    align: 'stretch',
+                    pack: 'start',
+                },
+                plain: true,
+                bodyStyle: 'margin:2px;padding:5px;',
+                buttonAlign: 'center',
+                items: [tree, grid],
+            });
+
+
+            store.load();
+
+            window.show();
+
+        });
+
+    </script>
+}

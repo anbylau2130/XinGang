@@ -1,0 +1,438 @@
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\Com.XinGang.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\Com.XinGang.pdb
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\Antlr3.Runtime.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.Core.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\EntityFramework.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\Newtonsoft.Json.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\System.Web.Helpers.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\System.Web.Http.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\System.Web.Mvc.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\System.Web.Optimization.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\System.Web.Razor.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\WebGrease.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\WebMatrix.Data.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\WebMatrix.WebData.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\EntityFramework.xml
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\Newtonsoft.Json.xml
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\System.Web.Helpers.xml
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\System.Web.Http.xml
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\System.Web.Mvc.xml
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\System.Web.Razor.xml
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.xml
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\WebMatrix.Data.xml
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\WebMatrix.WebData.xml
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.Core.xml
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Http.resources.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Optimization.resources.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\zh-Hans\WebMatrix.Data.resources.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\zh-Hans\Microsoft.Web.WebPages.OAuth.resources.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\bin\zh-Hans\WebMatrix.WebData.resources.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\obj\Debug\Com.XinGang.csprojResolveAssemblyReference.cache
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\obj\Debug\Com.XinGang.dll
+C:\Users\Administrator.WX-PC\Documents\Visual Studio 2012\Projects\Com.XinGang\Com.XinGang\obj\Debug\Com.XinGang.pdb
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.pdb
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Antlr3.Runtime.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.Core.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\EntityFramework.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Newtonsoft.Json.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Net.Http.Formatting.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Helpers.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Http.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Http.WebHost.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Mvc.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Optimization.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Razor.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.Razor.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\WebGrease.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\WebMatrix.Data.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\WebMatrix.WebData.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\EntityFramework.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Newtonsoft.Json.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Net.Http.Formatting.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Helpers.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Http.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Http.WebHost.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Mvc.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Razor.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.Razor.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\WebMatrix.Data.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\WebMatrix.WebData.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.Core.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Http.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Optimization.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\WebMatrix.Data.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\Microsoft.Web.WebPages.OAuth.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\WebMatrix.WebData.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\obj\Debug\Com.XinGang.csprojResolveAssemblyReference.cache
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\obj\Debug\Com.XinGang.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\obj\Debug\Com.XinGang.pdb
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\obj\Debug\Com.XinGang.csprojResolveAssemblyReference.cache
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Menu.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.pdb
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Antlr3.Runtime.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.Common.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.Model.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.Core.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\EntityFramework.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\EntityFramework.SqlServer.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Newtonsoft.Json.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Repository.DAL.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Repository.Domain.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Helpers.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Http.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Mvc.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Optimization.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Razor.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\WebGrease.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\WebMatrix.Data.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\WebMatrix.WebData.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.Common.pdb
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.Model.pdb
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Repository.DAL.pdb
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Repository.Domain.pdb
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\EntityFramework.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\EntityFramework.SqlServer.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Newtonsoft.Json.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Helpers.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Http.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Mvc.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Razor.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\WebMatrix.Data.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\WebMatrix.WebData.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.Core.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Http.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Optimization.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\WebMatrix.Data.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\Microsoft.Web.WebPages.OAuth.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\WebMatrix.WebData.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\obj\Debug\Com.XinGang.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\obj\Debug\Com.XinGang.pdb
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Menu.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.pdb
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Antlr3.Runtime.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.Common.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.Model.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.Core.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\EntityFramework.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\EntityFramework.SqlServer.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Newtonsoft.Json.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Repository.DAL.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Repository.Domain.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Net.Http.Formatting.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Helpers.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Http.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Http.WebHost.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Mvc.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Optimization.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Razor.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.Razor.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\WebGrease.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\WebMatrix.Data.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\WebMatrix.WebData.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.Common.pdb
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.Model.pdb
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Repository.DAL.pdb
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Repository.Domain.pdb
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\EntityFramework.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\EntityFramework.SqlServer.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Newtonsoft.Json.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Net.Http.Formatting.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Helpers.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Http.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Http.WebHost.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Mvc.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Razor.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.Razor.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\WebMatrix.Data.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\WebMatrix.WebData.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.Core.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Http.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Optimization.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\WebMatrix.Data.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\Microsoft.Web.WebPages.OAuth.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\WebMatrix.WebData.resources.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\obj\Debug\Com.XinGang.csprojResolveAssemblyReference.cache
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\obj\Debug\Com.XinGang.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\Com.XinGang\obj\Debug\Com.XinGang.pdb
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Menu.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.pdb
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Antlr3.Runtime.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.Common.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.Model.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.Core.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\EntityFramework.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\EntityFramework.SqlServer.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Newtonsoft.Json.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Repository.DAL.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Repository.Domain.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Helpers.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Http.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Mvc.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Optimization.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Razor.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\WebGrease.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\WebMatrix.Data.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\WebMatrix.WebData.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.Common.pdb
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.Model.pdb
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Repository.DAL.pdb
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Repository.Domain.pdb
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\EntityFramework.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\EntityFramework.SqlServer.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Newtonsoft.Json.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Helpers.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Http.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Mvc.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Razor.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\WebMatrix.Data.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\WebMatrix.WebData.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.Core.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Http.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Optimization.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\WebMatrix.Data.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\Microsoft.Web.WebPages.OAuth.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\WebMatrix.WebData.resources.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\obj\Debug\Com.XinGang.csprojResolveAssemblyReference.cache
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\obj\Debug\Com.XinGang.dll
+C:\Users\Administrator.WX-PC\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\obj\Debug\Com.XinGang.pdb
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Menu.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.Common.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.Model.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\EntityFramework.SqlServer.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Repository.DAL.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Repository.Domain.dll
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.Common.pdb
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.Model.pdb
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Repository.DAL.pdb
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\Repository.Domain.pdb
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\EntityFramework.SqlServer.xml
+C:\Users\Eric\Desktop\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\Menu.xml
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.pdb
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\Antlr3.Runtime.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.Common.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.Model.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.AspNet.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.Core.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OAuth.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OpenId.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\EntityFramework.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\EntityFramework.SqlServer.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\Microsoft.Web.WebPages.OAuth.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\Newtonsoft.Json.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\Repository.DAL.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\Repository.Domain.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Net.Http.Formatting.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Helpers.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Http.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Http.WebHost.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Mvc.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Optimization.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Razor.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.Razor.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\WebGrease.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\WebMatrix.Data.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\WebMatrix.WebData.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.Common.pdb
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\Com.XinGang.Model.pdb
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\Repository.DAL.pdb
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\Repository.Domain.pdb
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\EntityFramework.xml
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\EntityFramework.SqlServer.xml
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\Newtonsoft.Json.xml
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Net.Http.Formatting.xml
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Helpers.xml
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Http.xml
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Http.WebHost.xml
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Mvc.xml
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.Razor.xml
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.xml
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\System.Web.WebPages.Razor.xml
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\WebMatrix.Data.xml
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\Microsoft.Web.WebPages.OAuth.xml
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\WebMatrix.WebData.xml
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.AspNet.xml
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.Core.xml
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OAuth.xml
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OpenId.xml
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\EntityFramework.resources.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Helpers.resources.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Http.resources.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Mvc.resources.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Optimization.resources.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.Razor.resources.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.WebPages.resources.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\WebMatrix.Data.resources.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\Microsoft.Web.WebPages.OAuth.resources.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\bin\zh-Hans\WebMatrix.WebData.resources.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\obj\Debug\Com.XinGang.csprojResolveAssemblyReference.cache
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\obj\Debug\Com.XinGang.dll
+D:\Projects\Com.XinGang\Com.XinGang\Com.XinGang\obj\Debug\Com.XinGang.pdb

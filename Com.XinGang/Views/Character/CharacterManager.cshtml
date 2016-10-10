@@ -1,0 +1,342 @@
+﻿@{
+    ViewBag.Title = "title";
+}
+@section Head
+{
+    <script type="text/javascript">
+        //var data = [["公司简介", "CompanyProfiled"], ["经营范围", "BusinessScope"], ["招聘信息", "Offers"], ["合作企业", "Cooperative"], ["荣誉资质", "Honours"], ["关于我们", "AboutUs"]];
+        var comboStore = new Ext.data.Store({
+            autoLoad: true,
+            proxy: new Ext.data.HttpProxy({
+                url: '@Url.Content("~/MenuContent/PageCombobox")'
+            }),
+              reader: new Ext.data.JsonReader({
+                  fields: ['PageName', 'PageCode']
+              })
+          });
+        function Update(data) {
+
+            var formpanel = new Ext.form.FormPanel({
+                baseCls: 'x-plain',
+                autoHeight: true,
+                autoWidth: true,
+                layout: 'form',
+                defaultType: 'textfield',
+                items: [
+                {
+                    xtype: 'textfield',
+                    readOnly: false,
+                    fieldLabel: '标题',
+                    id: 'Title',
+                    labelWidth: 50,
+                },
+                {
+                    id: 'CreateTime',
+                    readOnly: true,
+                    fieldLabel: '创建时间',
+                    labelWidth: 50,
+                },
+                 {
+                   xtype: 'combo',
+                   readOnly: false,
+                   fieldLabel: '页面归属',
+                   forceSelection: true,
+                   editable: false,
+                   valueField: 'PageCode',
+                   displayField: 'PageName',
+                   labelWidth: 50,
+                   mode: "remote",
+                   triggerAction: 'all',
+                   //listWidth: 200,
+                   store: comboStore,
+                   id: 'CharacterType',
+               },
+                {
+                    xtype: 'htmleditor',
+                    readOnly: false,
+                    fieldLabel: '文本内容',
+                    id: 'Content',
+                    labelWidth: 50,
+                },
+                {
+                    xtype: 'hidden',
+                    id: 'UpdateTime'
+                },
+                {
+                    xtype: 'hidden',
+                    id: 'ID'
+                }]
+            });
+            var updatewin = new Ext.Window({
+                modal: true,
+                title: '添加菜单',
+                closable: false,
+                width: 600,
+                height: 400,
+                maximized: false,
+                layout: 'form',
+                plain: true,
+                items: formpanel,
+                buttons: [{
+                    text: '保存',
+                    handler: function () {
+                        Ext.Ajax.request({
+                            waitMsg: '正在提交...',
+                            url: '@Url.Content("~/Character/Update")',
+                            params: {
+                                CharacterType: Ext.getCmp("CharacterType").getValue(),
+                                ID: Ext.getDom("ID").value,
+                                Title: Ext.getDom("Title").value,
+                                Content: Ext.util.Format.htmlEncode(Ext.getCmp("Content").getValue()),
+                                CreateTime: Ext.getDom("CreateTime").value,
+                                UpdateTime: Ext.getDom("UpdateTime").value,
+                            },
+                            success: function (form, action) {
+                                Ext.Msg.alert("网站信息：", '亲~,恭喜你，保存成功~');
+                                store.load();
+                            },
+                            failure: function (form, action) {
+                                Ext.Msg.alert('异常警告：', "亲~，不好意思，数据保存失败~");
+
+                            }
+                        });
+                    }
+                }, {
+                    text: '关闭',
+                    handler: function () {
+                        updatewin.close();
+                    }
+                }]
+            });
+            updatewin.show();
+
+            Ext.getDom("ID").value = data.ID;
+
+            Ext.getDom("Title").value = data.Title;
+            
+            Ext.getCmp("CharacterType").setValue(data.CharacterType);
+           
+            Ext.getCmp("Content").setValue(Ext.util.Format.htmlDecode(Ext.util.Format.htmlDecode(data.Content)));
+
+            Ext.getDom("CreateTime").value = data.CreateTime;
+
+            Ext.getDom("UpdateTime").value = data.UpdateTime;
+
+
+        }
+
+        function Add() {
+
+            var formpanel = new Ext.form.FormPanel({
+                baseCls: 'x-plain',
+                autoHeight: true,
+                autoWidth: true,
+                layout: 'form',
+                defaultType: 'textfield',
+                items: [
+                {
+                    xtype: 'textfield',
+                    readOnly: false,
+                    fieldLabel: '标题',
+                    id: 'Title',
+                    labelWidth: 50,
+                },
+                {
+                  
+                    id: 'CreateTime',
+                    readOnly: true,
+                    fieldLabel: '创建时间',
+                    labelWidth: 50,
+                    
+                }, {
+                    xtype: 'combo',
+                    readOnly: false,
+                    fieldLabel: '页面归属',
+                    forceSelection: true,
+                    editable: false,
+                    valueField: 'PageCode',
+                    displayField: 'PageName',
+                    labelWidth: 50,
+                    mode: "remote",
+                    triggerAction: 'all',
+                    //listWidth: 200,
+                    store: comboStore,
+                    id: 'CharacterType',
+                },
+                {
+                    xtype: 'htmleditor',
+                    readOnly: false,
+                    fieldLabel: '文本内容',
+                    id: 'Content',
+                    labelWidth: 50,
+                },
+                {
+                    xtype: 'hidden',
+                    id: 'UpdateTime'
+                },
+                {
+                    xtype: 'hidden',
+                    id: 'ID'
+                }]
+            });
+            var updatewin = new Ext.Window({
+                modal: true,
+                title: '添加菜单',
+                closable: false,
+                width: 600,
+                height: 400,
+                maximized: false,
+                layout: 'form',
+                plain: true,
+                items: formpanel,
+                buttons: [{
+                    text: '保存',
+                    handler: function () {
+                        Ext.Ajax.request({
+                            waitMsg: '正在提交...',
+                            url: '@Url.Content("~/Character/Add")',
+                            params: {
+                                CharacterType: Ext.getCmp("CharacterType").getValue(),
+                                ID: Ext.getDom("ID").value,
+                                Title: Ext.getDom("Title").value,
+                                Content: Ext.util.Format.htmlEncode(Ext.getCmp("Content").getValue()),
+                                CreateTime: Ext.getDom("CreateTime").value,
+                                UpdateTime: Ext.getDom("UpdateTime").value,
+                            },
+                            success: function (form, action) {
+                                Ext.Msg.alert("网站信息：", '亲~,恭喜你，保存成功~');
+                                store.load();
+                            },
+                            failure: function (form, action) {
+                                Ext.Msg.alert('异常警告：', "亲~，不好意思，数据保存失败~");
+
+                            }
+                        });
+                    }
+                }, {
+                    text: '关闭',
+                    handler: function () {
+                        updatewin.close();
+                    }
+                }]
+            });
+            updatewin.show();
+
+        }
+
+        function Delete(data) {
+
+            Ext.Ajax.request({
+                waitMsg: '正在提交...',
+                url: '@Url.Content("~/Character/Delete")',
+                params: {
+                    ID: data.ID,
+                    Title: data.Title,
+                    Content: data.Content,
+                    CreateTime: data.CreateTime,
+                    UpdateTime: data.UpdateTime,
+                    CharacterType:data.CharacterType
+                },
+                success: function (form, action) {
+                    Ext.Msg.alert("网站信息：", '亲~,恭喜你，删除成功~');
+                    store.load();
+                },
+                failure: function (form, action) {
+                    Ext.Msg.alert('异常警告：', "亲~，不好意思，数据删除失败~");
+                }
+            });
+        }
+
+        var store = new Ext.data.Store({
+            proxy: new Ext.data.HttpProxy({
+                url: "@Url.Content("~/Character/List")",
+                
+                method:"Post"
+                
+                }
+                ),
+                reader: new Ext.data.JsonReader({},
+                [
+                { name: 'ID' },
+                { name: 'Title' },
+                { name: 'Content' },
+                { name: 'CreateTime' },
+                { name: "UpdateTime" },
+                { name: "CharacterType" }
+                ]
+            )
+            });
+
+    var grid = new Ext.grid.GridPanel({
+        width: 700,
+        height: 500,
+        title: '菜单列表',
+        store: store,
+        columnLines: true,
+        trackMouseOver: false,
+        disableSelection: true,
+        loadMask: true,
+        columns: [
+        { id: 'ID', header: "ID", dataIndex: 'ID', width: 10, sortable: true },
+        { header: "标题", dataIndex: 'Title', width: 20, hidden: false, sortable: true },
+        { header: "文本内容", dataIndex: 'Content', width: 20, hidden: false, sortable: true },
+        { header: "文本归属", dataIndex: 'CharacterType', width: 20, hidden: false, sortable: true },
+        { header: "创建时间", dataIndex: 'CreateTime', width: 20, align: 'right', sortable: true },
+        { header: "更新时间", dataIndex: 'UpdateTime', width: 10, sortable: true },
+        {
+            header: '操作',
+            width: 20,
+            dataIndex: 'ID',
+            align: "center",
+            renderer: function (data, cellmeta, record) {
+                record.data.Content = Ext.util.Format.htmlEncode(record.data.Content);
+                var returnStr = "<INPUT type='button' id='btnAdd' value='增加' onclick='Add()' />  <INPUT type='button' id='btnUpdate' value='修改' onclick='Update(" + Ext.encode(record.data) + ")' /> <INPUT type='button' value='删除' id='btnDelete' onclick='Delete(" + Ext.encode(record.data) + ")'/>";
+                return returnStr;
+            }
+        }
+        ],
+        viewConfig: {
+            loadMask: true,
+            forceFit: true
+        },
+        tbar: new Ext.Toolbar([{
+            text: '添加文章',
+            icon: 'icons/add.gif',
+            handler: function () {
+                Add();
+            }
+        }]),
+        bbar: new Ext.PagingToolbar({
+            pageSize: 50,
+            store: store,
+            displayInfo: true,
+            displayMsg: '当前{0}到{1}条,共{2}条',
+            emptyMsg: '没有符合条件的数据'
+        })
+    });
+
+    Ext.onReady(function () {
+
+        Ext.QuickTips.init();
+
+        var window = new Ext.Window({
+            title: '文章管理',
+            closable: false,
+            width: 800,
+            height: 600,
+            minWidth: 600,
+            minHeight: 500,
+            maximized: true,
+            layout: 'fit',
+            plain: true,
+            bodyStyle: 'margin:2px;padding:5px;',
+            buttonAlign: 'center',
+            items: grid,
+        });
+        store.load();
+        window.show();
+
+    });
+
+    </script>
+}

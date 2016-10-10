@@ -1,0 +1,298 @@
+﻿@{
+    ViewBag.Title = "内容类型管理";
+}
+
+@section Head
+{
+
+    <script type="text/javascript">
+        function Update(data) {
+
+            var formpanel = new Ext.form.FormPanel({
+                baseCls: 'x-plain',
+                autoHeight: true,
+                autoWidth: true,
+                layout: 'form',
+                defaultType: 'textfield',
+                items: [
+                    {
+                        xtype: 'textfield',
+                        readOnly: false,
+                        fieldLabel: '类型名称',
+                        id: 'TypeName',
+                         labelWidth: 50,
+                },
+                 {
+                     xtype: 'textfield',
+                     readOnly: false,
+                     fieldLabel: '类型编号',
+                     id: 'TypeCode',
+                     labelWidth: 50,
+                 },
+                    {
+                        xtype: 'textfield',
+                        readOnly: false,
+                        fieldLabel: '控制器',
+                        id: 'Controller',
+                        labelWidth: 50,
+                    }, {
+                        xtype: 'textfield',
+                        readOnly: false,
+                        fieldLabel: '视图',
+                        id: 'View',
+                        labelWidth: 50,
+                    },
+                    {
+                        xtype: 'hidden',
+                        id: 'ID'
+                    }]
+            });
+            var updatewin = new Ext.Window({
+                modal: true,
+                title: '更新内容类型',
+                closable: false,
+                width: 600,
+                height: 400,
+                maximized: false,
+                layout: 'form',
+                plain: true,
+                items: formpanel,
+                buttons: [{
+                    text: '保存',
+                    handler: function () {
+                        Ext.Ajax.request({
+                            waitMsg: '正在提交...',
+                            url: '@Url.Content("~/ContentType/Update")',
+                            params: {
+                                TypeName: Ext.getDom("TypeName").value,
+                                TypeCode: Ext.getDom("TypeCode").value,
+                                Controller: Ext.getDom("Controller").value,
+                                View: Ext.getDom("View").value,
+                                ID: Ext.getDom("ID").value
+                            },
+                            success: function (form, action) {
+                                Ext.Msg.alert("网站信息：", '亲~,恭喜你，保存成功~');
+                                store.load();
+                            },
+                            failure: function (form, action) {
+                                Ext.Msg.alert('异常警告：', "亲~，不好意思，数据保存失败~");
+                            }
+                        });
+                    }
+                }, {
+                    text: '关闭',
+                    handler: function () {
+                        updatewin.close();
+                    }
+                }]
+            });
+            updatewin.show();
+
+            Ext.getDom("TypeName").value = data.TypeName;
+
+            Ext.getDom("TypeCode").value = data.TypeCode;
+
+            Ext.getDom("Controller").value = data.Controller;
+            
+            Ext.getDom("View").value = data.View;
+            Ext.getDom("ID").value = data.ID;
+        }
+
+        function Add() {
+
+            var formpanel = new Ext.form.FormPanel({
+                baseCls: 'x-plain',
+                autoHeight: true,
+                autoWidth: true,
+                layout: 'form',
+                defaultType: 'textfield',
+                items: [
+                    {
+                        xtype: 'textfield',
+                        readOnly: false,
+                        fieldLabel: '类型名称',
+                        id: 'TypeName',
+                        labelWidth: 50,
+                    },
+                 {
+                     xtype: 'textfield',
+                     readOnly: false,
+                     fieldLabel: '页面编号',
+                     id: 'TypeCode',
+                     labelWidth: 50,
+                 },
+                    {
+                        xtype: 'textfield',
+                        readOnly: false,
+                        fieldLabel: '控制器',
+                        id: 'Controller',
+                        labelWidth: 50,
+                    }, {
+                        xtype: 'textfield',
+                        readOnly: false,
+                        fieldLabel: '视图',
+                        id: 'View',
+                        labelWidth: 50,
+                    },
+                    {
+                        xtype: 'hidden',
+                        id: 'ID'
+                    }]
+            });
+            var updatewin = new Ext.Window({
+                modal: true,
+                title: '添加内容类型',
+                closable: false,
+                width: 600,
+                height: 400,
+                maximized: false,
+                layout: 'form',
+                plain: true,
+                items: formpanel,
+                buttons: [{
+                    text: '保存',
+                    handler: function () {
+                        Ext.Ajax.request({
+                            waitMsg: '正在提交...',
+                            url: '@Url.Content("~/ContentType/Add")',
+                                params: {
+                                    TypeName: Ext.getDom("TypeName").value,
+                                    TypeCode: Ext.getDom("TypeCode").value,
+                                    Controller: Ext.getDom("Controller").value,
+                                    View: Ext.getDom("View").value,
+                                    ID: Ext.getDom("ID").value
+                                },
+                                success: function (form, action) {
+                                    Ext.Msg.alert("网站信息：", '亲~,恭喜你，保存成功~');
+                                    store.load();
+                                },
+                                failure: function (form, action) {
+                                    Ext.Msg.alert('异常警告：', "亲~，不好意思，数据保存失败~");
+                                }
+                            });
+                        }
+                }, {
+                    text: '关闭',
+                    handler: function () {
+                        updatewin.close();
+                    }
+                }]
+            });
+                updatewin.show();
+
+            }
+
+            function Delete(data) {
+
+                Ext.Ajax.request({
+                    waitMsg: '正在提交...',
+                    url: '@Url.Content("~/ContentType/Delete")',
+                params: {
+                    TypeName: data.TypeName,
+                    TypeCode:data.TypeCode,
+                    Controller: data.Controller,
+                    View: data.View,
+                    ID: data.ID
+                },
+                success: function (form, action) {
+                    Ext.Msg.alert("网站信息：", '亲~,恭喜你，删除成功~');
+                    store.load();
+                },
+                failure: function (form, action) {
+                    Ext.Msg.alert('异常警告：', "亲~，不好意思，数据删除失败~");
+                }
+            });
+        }
+
+        var store = new Ext.data.Store({
+            proxy: new Ext.data.HttpProxy({
+                url: "@Url.Content("~/ContentType/List")",
+            }
+            ),
+            reader: new Ext.data.JsonReader({},
+                [
+                    { name: 'ID' },
+                    { name: 'TypeName' },
+                    { name: 'TypeCode' },
+                    { name: 'Controller' },
+                    { name: 'View' }
+                ]
+            )
+        });
+
+        var grid = new Ext.grid.GridPanel({
+            width: 700,
+            height: 500,
+            title: '内容类型列表',
+            store: store,
+            columnLines: true,
+            trackMouseOver: false,
+            disableSelection: true,
+            loadMask: true,
+            columns: [
+                { id: 'ID', header: "ID", dataIndex: 'ID', width: 10, sortable: true },
+                { header: "类型名称", dataIndex: 'TypeName', width: 20, hidden: false, sortable: true },
+                { header: "类型编码", dataIndex: 'TypeCode', width: 20, hidden: false, sortable: true },
+                { header: "控制器", dataIndex: 'Controller', width: 20, align: 'right', sortable: true },
+                 { header: "视图", dataIndex: 'View', width: 20, align: 'right', sortable: true },
+                {
+                    header: '操作',
+                    width: 20,
+                    dataIndex: 'ID',
+                    align: "center",
+                    renderer: function (data, cellmeta, record) {
+                        var returnStr = "<INPUT type='button' id='btnAdd' value='增加' onclick='Add()' />  <INPUT type='button' id='btnUpdate' value='修改' onclick='Update(" + Ext.encode(record.data) + ")' /> <INPUT type='button' value='删除' id='btnDelete' onclick='Delete(" + Ext.encode(record.data) + ")'/>";
+                        return returnStr;
+                    }
+                }
+            ],
+            viewConfig: {
+                loadMask: true,
+                forceFit: true
+            },
+            tbar: new Ext.Toolbar([{
+                text: '添加内容类型',
+                icon: 'icons/add.gif',
+                handler: function () {
+                    Add();
+                }
+            }]),
+            bbar: new Ext.PagingToolbar({
+                pageSize: 50,
+                store: store,
+                displayInfo: true,
+                displayMsg: '当前{0}到{1}条,共{2}条',
+                emptyMsg: '没有符合条件的数据'
+            })
+        });
+
+        Ext.onReady(function () {
+
+            Ext.QuickTips.init();
+
+            var window = new Ext.Window({
+                title: '内容类型管理',
+                closable: false,
+                width: 800,
+                height: 600,
+                minWidth: 600,
+                minHeight: 500,
+                maximized: true,
+                layout: 'fit',
+                plain: true,
+                bodyStyle: 'margin:2px;padding:5px;',
+                buttonAlign: 'center',
+                items: grid,
+            });
+
+
+            store.load();
+
+            window.show();
+
+        });
+
+    </script>
+}
+
+

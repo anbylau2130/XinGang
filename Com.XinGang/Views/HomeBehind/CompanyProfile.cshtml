@@ -1,0 +1,110 @@
+﻿@{
+    ViewBag.Title = "公司简介";
+}
+
+@section Head
+{
+    @*  <script type="text/javascript" src="@Url.Content("~/Scripts/Ext/adapter/ext/ext-base.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Ext/ext-all.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Ext/src/widgets/tips/QuickTips.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Ext/src/locale/ext-lang-zh_CN.js")"></script>*@
+
+    <script type="text/javascript">
+        //Ext.MessageBox.alert("Alert", "页面加载完成!");
+        //表单提交函数
+
+        Ext.onReady(function () {
+
+
+            var form = new Ext.form.FormPanel({
+                baseCls: 'x-plain',
+                layout: 'form',
+                defaultType: 'textfield',
+                items: [
+                    {
+                        xtype: 'textfield',
+                        readOnly :true,
+                        fieldLabel: '修改时间',
+                        id: 'updatetime',
+                        labelWidth: 100,
+                   },
+                    {
+                        xtype: 'label',
+                        fieldLabel: '简介内容',
+                    },
+                    {
+                        xtype: 'htmleditor',
+                        hideLabel: true,
+                        id: 'profile',
+                        width:990,
+                        height:500
+                    }]
+            });
+
+            Ext.Ajax.request({
+                url: '@Url.Content("~/HomeBehind/GetCompanyProfile")',
+                method: "Post",
+                success: function (response) {
+                    console.log(response);
+                    var jsonData = Ext.util.JSON.decode(response.responseText);
+                    Ext.getCmp("profile").setValue(Ext.util.Format.htmlDecode(jsonData.Profile));
+                    Ext.get("updatetime").dom.value = jsonData.UpdateTime;
+                }
+            });
+
+            var window = new Ext.Window({
+                title: '公司简介',
+                closable: false,
+                minWidth: 600,
+                minHeight: 500,
+                maximized: true,
+                layout: 'fit',
+                plain: true,
+                bodyStyle: 'margin:2px;padding:5px;',
+                buttonAlign: 'center',
+                items: form,
+                buttons: [{
+                    text: '提交',
+                    handler: function () {
+                        if (form.getForm().isValid()) {
+                            Ext.Ajax.request({
+                                waitMsg: '正在提交...',
+                                url: '@Url.Content("~/HomeBehind/AddCompanyProfile")',
+                                    params: { profile: Ext.util.Format.htmlEncode(Ext.getDom("profile").value) },
+                                    success: function (form, action) {
+                                        Ext.Msg.alert("网站信息：", '亲~,恭喜你，保存成功~');
+                                    },
+                                    failure: function (form, action) {
+                                        Ext.Msg.alert('异常警告：', "亲~，不好意思，数据保存失败~");
+                                    }
+                                })
+                               @* form.form.submit({
+                                    waitMsg: '正在提交...',
+                                    url: '@Url.Content("~/HomeBehind/AddCompanyProfile")',
+                                    timeout: 3000,
+                                    success: function(form, action) {
+                                        Ext.Msg.alert("网站信息：", '亲~,恭喜你，保存成功~');
+                                    },
+                                    failure: function(form, action) {
+                                        Ext.Msg.alert('异常警告：', "亲~，不好意思，数据保存失败~");
+                                    }
+                                });*@
+                            }
+                        }
+                }, {
+                    text: '重置',
+                    //handler: function () {
+                    //    myform.form.reset();
+                    //}
+                }]
+            });
+            window.show();
+          
+        });
+
+    </script>
+}
+
+
+
+

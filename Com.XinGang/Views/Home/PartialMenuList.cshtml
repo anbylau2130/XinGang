@@ -1,0 +1,168 @@
+﻿@model IEnumerable<Com.XinGang.Model.Model.Menu>
+<script type="text/javascript">
+
+    var page_Index = 1;
+    var page_size = 10;
+    var bigheight;
+    var smallheight;
+
+    //默认隐藏正文，显示列表
+    $(function() {
+        smallheight = $("#newscontent").height();
+        bigheight = $("#content").height();
+        changemenu('@ViewData["MenuID"]', '@ViewData["MenuName"]');
+    });
+    
+    
+    function htmlcontentlist(data) {
+        console.log(data);
+        var html = '';
+        for (var i = 0; i < data.length ; i++) {
+            html += '<li class="title"><div class="title"><a href="javascript:opencontent(' + data[i].ID + ')" target="_self">' + data[i].Title + '</a></div><div class="time">' + data[i].CreateTime + '</div></li>';
+        }
+        //for (var i = 0; i <10- data.length;i++){
+        //    html += '<li ></li>';
+        //}
+        $("#queryul").html(html);
+    }
+
+    function htmlpager(pageIndex, pagesize, totalcount) {
+        var pagecount;
+        if (pagesize % totalcount == 0) {
+            pagecount = parseInt(totalcount / pagesize);
+        } else {
+            pagecount = parseInt(totalcount / pagesize) + 1;
+        }
+        var pagehtml = '  <div id="pagesinfo">共<span id="totlecount">' + totalcount + '</span>条  每页 <span id="pagesize">' + pagesize + '</span>条 页次：<span id="pageindex">' + pageIndex + '</span>/<span id="pagecount">' + pagecount + '</span> </div>' +
+                        ' <div id="pages">' +
+                        ' <ul>' +
+                        '<li class="pbutton">' +
+                        '  <a href="javascript:firstpage()">首页</a>' +
+                        '</li>' +
+                        '  <li class="pbutton"><a href="javascript:prvpage()">上一页</a></li>' +
+                        '<li id="pageIndex" class="pagesnow">' + pageIndex + '</li>' +
+                        '<li class="pbutton"><a href="javascript:nextpage()">下一页</a></li>' +
+                        '<li class="pbutton"><a href="javascript:lastpage()">尾页</a></li>' +
+                        '</ul>' +
+                        '</div>';
+        $("#showpages").html(pagehtml);
+    }
+
+    function changemenu(id, menu) {
+        $("#currentmenu").val(id);
+        $("#currentpath").html(menu);
+        $("#newscontent").height(smallheight);
+        $("#content").css("height", bigheight);
+        var url1 = '@Url.Content("~/Home/GetContentPager")' + '?menuid=' + id + '&pageIndex=1&pagesize=10';
+        $.ajax({
+            url: url1,
+            type: "POST",
+            dataType: "json",
+            success: function (data) {
+                htmlcontentlist(data.content);
+                htmlpager(page_Index, page_size, data.totalcount);
+            }
+        });
+        
+    }
+
+    function firstpage() {
+        $("#pageindex").html(1);
+        changepage($("#pageindex").html());
+    }
+    
+    function lastpage() {
+        changepage($("#pagecount").html());
+    }
+
+    function nextpage() {
+        var pageindex = $("#pageindex").html();
+        var pagecount = $("#pagecount").html();
+        if ((pageindex + 1) > pagecount) {
+            $("#pageindex").html(pagecount);
+        } else {
+            $("#pageindex").html(parseInt(pageindex) + 1);
+        }
+        changepage($("#pageindex").html());
+    }
+    
+    function prvpage() {
+        var pageindex = $("#pageindex").html();
+        if ((pageindex - 1) <= 1) {
+            $("#pageindex").html(1);
+            
+        } else {
+            $("#pageindex").html(parseInt(pageindex)- 1);
+        }
+        changepage($("#pageindex").html());
+    }
+    
+    function opencontent(contentid) {
+        //隐藏文章
+        //隐藏文章
+        //$("#pdv_16931").show();
+        //$("#pdv_16920").hide();
+        $.ajax({
+            url: '@Url.Content("~/Home/GetContent")' + '?contentid=' + contentid,
+            type: "POST",
+            dataType: "json",
+            success: function (data) {
+                console.log("content");
+                console.log(data);
+                $("#newstitle").html(data.Title);
+                $("#newstime").html(data.CreateTime);
+                $("#con").html(Ext.util.Format.htmlDecode(data.Text));
+                var size = $("#con").height() + 300;
+                $("#content").css("height", size);
+            }
+        });
+    }
+
+    function changepage(pageIndex) {
+        var menuid= $("#currentmenu").val();
+        var url1 = '@Url.Content("~/Home/GetContentPager")' + '?menuid=' + menuid + '&pageIndex=' + pageIndex + '&pagesize=' + page_size;
+         $.ajax({
+             url: url1,
+             type: "POST",
+             dataType: "json",
+             success: function (data) {
+                 htmlcontentlist(data.content);
+                 htmlpager(pageIndex, page_size, data.totalcount);
+             }
+         });
+
+    }
+
+</script>
+
+    <!-- 文章翻页检索 -->
+
+    <div id='pdv_16920' class='pdv_class' title='' style='width: 716px; height: 450px; top: 77px; left: 248px; z-index: 4'>
+        <div id='spdv_16920' class='pdv_content' style='overflow: visible; width: 100%;'>
+            <div class="pdv_border" style="margin: 0; padding: 0; height: 100%; border: 0px  solid; background: ;">
+                <div style="height: 25px; margin: 1px; display: none; background: ;">
+                    <div style="float: left; margin-left: 6px; line-height: 25px; font-weight: bold; color: ">
+                    </div>
+                    <div style="float: right; margin-right: 10px; display: none">
+                        <a href="-1" style="line-height: 25px; color: ">更多</a>
+                    </div>
+                </div>
+                <div style="padding: 0px">
+
+                    <link href="@Url.Content("~/Resource/news/templates/css/newsquery.css")" rel="stylesheet" type="text/css" />
+                    <div id="newsquery">
+                        <ul id="queryul">
+                        </ul>
+                    </div>
+
+                    <div id="showpages" style="margin-top: 0px">
+                        
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+ <input type="hidden" id="currentmenu" value="@ViewData["default"]"/>

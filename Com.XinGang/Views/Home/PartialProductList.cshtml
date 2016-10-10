@@ -1,0 +1,127 @@
+﻿
+@model IEnumerable<Com.XinGang.Model.Model.ProductType>
+
+<script type="text/javascript">
+
+    $(function () {
+        var id = '@ViewData["id"]';
+
+        change(id);
+    });
+
+    function change(id) {
+        var url1 = '@Url.Content("~/Home/GetProduct")' + '?id=' + id;
+        $.ajax({
+            url: url1,
+            type: "POST",
+            dataType: "json",
+            success: function (data) {
+                console.log(data);
+                var htmlproductlist='';
+                for(var i =0;i<data.length;i++)
+                {
+                    htmlproductlist += '<div class="productquery_dolphin">' +
+                                         '<div class="productquery_dolphin_top">' +
+                                          '<div class="fang" style="width:160px;height:120px">' +
+                                             '<div class="picFit" style="width:160px;height:120px">' +
+                                                '<a href="../../product/html/?82.html" target="_self" >' +
+                                                 '<img src="@Url.Content("~/Resource/product/pics/")' + data[i].PicURL + '" style="width:160px;height:120px" border="0" />' +
+                                                '</a>' +
+                                             '</div>' +
+                                           '</div>' +
+                                         '</div>' +
+                                       '<div class="productquery_dolphin_bottom">' +
+                                      '<a href="javascript:openproduct('+data[i].ID+')" target="_self" class="prodtitle"   >' + data[i].Name + '</a>' +
+                                    '</div></div>';
+                }
+                $("#productList").html(htmlproductlist);
+            }
+        });
+    }
+  
+</script>
+<div id='content' style='width:1002px;min-height:517px;background:url(@Url.Content("~/Resource/effect/source/bg/cbg.png")) repeat-y;margin:0px auto'>
+
+
+    <!-- 网页标题(菜单) -->
+
+    <div id='pdv_16700' class='pdv_class' title='栏目导航' style='width: 200px; height: 446px; top: 15px; left: 15px; z-index: 4'>
+        <div id='spdv_16700' class='pdv_content' style='overflow: hidden; width: 100%; height: 100%'>
+            <div class="pdv_border" style="border:0px;height:100%;background:#ffffff url(@Url.Content("~/Resource//base/border/604/images/l.png")) repeat-y">
+                <div style="height:100%;background:url(@Url.Content("~/Resource/base/border/604/images/r.png")) right repeat-y">
+                    <div style="height:39px;background:url(@Url.Content("~/Resource//base/border/604/images/top.png")) 0px 0px no-repeat">
+                        <div style="float: left; font: 14px/41px 'microsoft yahei','SimSun',Arial,Sans-Serif; padding-left: 32px; color: #fff;">
+                            栏目导航
+                        </div>
+                        <div style="float:right;width:60px;height:39px;text-align:right;background:url(@Url.Content("~/Resource/base/border/604/images/top.png")) -840px 0px no-repeat">
+                            <a href="-1" style="display: none">
+                                <img src="@Url.Content("~/Resource/base/border/604/images/more.png")" style="border:0px;margin:18px 20px 0px 0px;" /></a>
+                        </div>
+                    </div>
+                    <div style="margin: 0px 3px; padding: 0px">
+
+                        <link href="@Url.Content("~/Resource/page/templates/css/pagetitlemenu_dolphin.css")" rel="stylesheet" type="text/css" />
+                        <div class="titlemenu_dolphin">
+                            @foreach (var item in Model)
+                            {
+                                <a href="javascript:change(@item.ID)" onclick="" target="_self" class="titlemenu_dolphin">@item.Name</a>
+                            }
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top:-12px;height:12px;line-height:12px;background:url(@Url.Content("~/Resource//base/border/604/images/top.png")) 0px -218px no-repeat">&nbsp;</div>
+            <div style="float:right;margin-top:-12px;width:12px;height:12px;line-height:12px;background:url(@Url.Content("~/Resource/base/border/604/images/top.png")) -888px -218px no-repeat">&nbsp;</div>
+
+        </div>
+    </div>
+
+    <!-- 当前位置提示条 -->
+
+    <div id='pdv_16702' class='pdv_class' title='' style='width: 750px; height: 39px; top: 18px; left: 230px; z-index: 5'>
+        <div id='spdv_16702' class='pdv_content' style='overflow: hidden; width: 100%; height: 100%'>
+            <div class="pdv_border" style="border:0px;background:url(@Url.Content("~/Resource/base/border/788/images/title.png")) 0 0 no-repeat;padding:0px;margin:0px;height:100%;">
+                <link href="@Url.Content("~/Resource/page/templates/css/nav.css")" rel="stylesheet" type="text/css" />
+                <div id="nav">
+                    您现在的位置：<a href="@Url.Content("~/Home/Index")">企业形象成品网站</a> &gt; <span> <a href="@Url.Content("~/Home/" + ViewData["PageName"])">@ViewData["PageTitle"]</a></span>&gt;<span id="currentpath"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- 产品检索搜索 -->
+
+<div id='pdv_16951' class='pdv_class'  title='产品检索' style='width:761px;height:409px;top:85px;left:240px; z-index:5'>
+<div id='spdv_16951' class='pdv_content' style='overflow:visible;width:100%;'>
+<div class="pdv_border" style="margin:0;padding:0;height:100%;border:0px  solid;background:;">
+	<div style="height:25px;margin:1px;display:none;background:;">
+		<div style="float:left;margin-left:6px;line-height:25px;font-weight:bold;color:">
+		产品检索
+		</div>
+		<div style="float:right;margin-right:10px;display:none">
+		<a href="-1" style="line-height:25px;color:">更多</a>
+		</div>
+	</div>
+<div style="padding:0px">
+
+    <link href="@Url.Content("~/Resource/product/templates/css/productquery_dolphin.css")" rel="stylesheet" type="text/css" />
+
+<div id="productList">
+    
+
+</div>
+<script>
+    $(window).load(function () {
+        $.picFit("auto");
+    });
+</script>
+
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
